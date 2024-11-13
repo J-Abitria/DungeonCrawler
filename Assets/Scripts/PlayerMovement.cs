@@ -5,23 +5,28 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private float speed;
+    private Rigidbody2D rb;
+    private Vector2 direction;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        rb = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.W))
-            transform.position += Vector3.up * speed * Time.deltaTime;
-        else if (Input.GetKey(KeyCode.S))
-            transform.position += Vector3.down * speed * Time.deltaTime;
-        if (Input.GetKey(KeyCode.D))
-            transform.position += Vector3.right * speed * Time.deltaTime;
-        else if (Input.GetKey(KeyCode.A))
-            transform.position += Vector3.left * speed * Time.deltaTime;
+        calcDirection();
+        rb.velocity = direction * speed;
+    }
+
+    void calcDirection()
+    {
+        direction = Vector2.zero;
+        direction += Input.GetKey(KeyCode.W) ? new Vector2(0, 1) : new Vector2(0, 0);
+        direction += Input.GetKey(KeyCode.S) ? new Vector2(0, -1) : new Vector2(0, 0);
+        direction += Input.GetKey(KeyCode.D) ? new Vector2(1, 0) : new Vector2(0, 0);
+        direction += Input.GetKey(KeyCode.A) ? new Vector2(-1, 0) : new Vector2(0, 0);
     }
 }
