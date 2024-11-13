@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private float speed;
+    [SerializeField] private GameObject bullet;
     private Rigidbody2D rb;
     private Vector2 direction;
 
@@ -19,6 +21,8 @@ public class PlayerMovement : MonoBehaviour
     {
         calcDirection();
         rb.velocity = direction * speed;
+        if (Input.GetMouseButtonDown(0))
+            createBullet();
     }
 
     void calcDirection()
@@ -28,5 +32,10 @@ public class PlayerMovement : MonoBehaviour
         direction += Input.GetKey(KeyCode.S) ? new Vector2(0, -1) : new Vector2(0, 0);
         direction += Input.GetKey(KeyCode.D) ? new Vector2(1, 0) : new Vector2(0, 0);
         direction += Input.GetKey(KeyCode.A) ? new Vector2(-1, 0) : new Vector2(0, 0);
+    }
+
+    public void createBullet()
+    {
+        Instantiate(bullet, transform.position, Quaternion.identity);
     }
 }
