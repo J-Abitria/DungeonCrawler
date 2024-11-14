@@ -5,13 +5,15 @@ using UnityEngine;
 public class BulletScript : MonoBehaviour
 {
     [SerializeField] private float speed = 10f;
+    [SerializeField] private PlayerMovement player;
     private Rigidbody2D rb;
-    private Vector2 movement = new Vector2(1, 0);
+    private Vector2 movement;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
+        player = FindAnyObjectByType<PlayerMovement>();
         rb = GetComponent<Rigidbody2D>();
-        movement = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        movement = Camera.main.ScreenToWorldPoint(Input.mousePosition) - player.transform.position;
         movement.Normalize();
         rb.velocity = movement * speed;
     }
@@ -19,7 +21,7 @@ public class BulletScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+   
     }
 
     private void OnCollisionEnter2D(Collision2D other)
