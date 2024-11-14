@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: DungeonTilesUpdate_1_0
+  m_Name: DungeonTilesUpdate_2_0
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: -7929500505621407083, guid: 67693138fcdc7e64b8d422078f3d3bb6, type: 3}
+  m_Sprite: {fileID: -4017274637228338282, guid: 70864541cec802848895d53aab05ea62, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1

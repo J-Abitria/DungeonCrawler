@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 67693138fcdc7e64b8d422078f3d3bb6
+guid: 70864541cec802848895d53aab05ea62
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7929500505621407083
-    second: DungeonTilesUpdate_1_0
+      213: -4017274637228338282
+    second: DungeonTilesUpdate_2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: DungeonTilesUpdate_1_0
+      name: DungeonTilesUpdate_2_0
       rect:
         serializedVersion: 2
         x: 0
@@ -114,14 +114,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 59ad72c6d41c4f190800000000000000
-      internalID: -7929500505621407083
+      spriteID: 69391da7006cf38c0800000000000000
+      internalID: -4017274637228338282
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DungeonTilesUpdate_1_1
+      name: DungeonTilesUpdate_2_1
       rect:
         serializedVersion: 2
         x: 18
@@ -135,35 +135,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bb3a0a42f35895845b79cf50115413cb
-      internalID: -1991519392
+      spriteID: 21b9008d08912014d89c6338a73dc6e7
+      internalID: 1684357081
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DungeonTilesUpdate_1_2
+      name: DungeonTilesUpdate_2_2
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 16
         height: 16
-      alignment: 0
+      alignment: 9
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6b9b3b25116511b4b97200e22c2a9569
-      internalID: 219369178
+      spriteID: 728712b1c0afd084881d83a9b36eb825
+      internalID: -1557089892
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DungeonTilesUpdate_1_3
+      name: DungeonTilesUpdate_2_3
       rect:
         serializedVersion: 2
         x: 18
@@ -177,8 +177,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d24d0dc0251b67f418cad76d401863d2
-      internalID: -350720702
+      spriteID: 3c27214e82ef420459d7aa3fe118eee1
+      internalID: 106451456
       vertices: []
       indices: 
       edges: []
@@ -186,7 +186,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: e6c37e37445ba2c4981b56f70dd4c5e3
+    spriteID: 70af0cdc539587344868f7faadb03e23
     internalID: 0
     vertices: []
     indices: 
@@ -194,10 +194,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      DungeonTilesUpdate_1_0: -7929500505621407083
-      DungeonTilesUpdate_1_1: -1991519392
-      DungeonTilesUpdate_1_2: 219369178
-      DungeonTilesUpdate_1_3: -350720702
+      DungeonTilesUpdate_2_0: -4017274637228338282
+      DungeonTilesUpdate_2_1: 1684357081
+      DungeonTilesUpdate_2_2: -1557089892
+      DungeonTilesUpdate_2_3: 106451456
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
