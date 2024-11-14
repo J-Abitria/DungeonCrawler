@@ -11,6 +11,8 @@ public class BulletScript : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        movement = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        movement.Normalize();
         rb.velocity = movement * speed;
     }
 
