@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 0018d60f251db8448b29bc6fe67b923d
+guid: 3d316b83779d56f4cba6ce5994a378bb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8140593895237489223
-    second: PlayerBullet_0
+      213: -5804369194235921956
+    second: PityEnemy_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PlayerBullet_0
+      name: PityEnemy_0
       rect:
         serializedVersion: 2
-        x: 3
-        y: 5
-        width: 10
-        height: 6
+        x: 1
+        y: 0
+        width: 15
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -114,8 +114,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 742185a540339f070800000000000000
-      internalID: 8140593895237489223
+      spriteID: cd9f85088fcb27fa0800000000000000
+      internalID: -5804369194235921956
       vertices: []
       indices: 
       edges: []
@@ -131,7 +131,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      PlayerBullet_0: 8140593895237489223
+      PityEnemy_0: -5804369194235921956
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
